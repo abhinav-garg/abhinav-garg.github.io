@@ -13,6 +13,9 @@
 		<script type="text/javascript" src ="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 
+		<script src="http://code.highcharts.com/highcharts.js"></script>
+		<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
 		<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
 		<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
 		<script type="text/javascript" src="js/perfect-scrollbar.with-mousewheel.min.js"></script>
@@ -50,7 +53,7 @@
 			</div>
 		</div>
 		<div id = "courses" style = "font-size: 1.5em; position: relative; display: none;">
-			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
+			<div style = "width: 50vw; position: absolute; left: 0em; padding: 2em;">
 				<ul style="list-style-type: none;">
 					<td><b>IIT Bombay</b><br/>
 					Majoring in <b>Aerospace Engineering</b> (with honors), minoring in <b>Electrical Engineering</b>.<br/>
@@ -89,12 +92,12 @@
 						<li>AE 214 (Thermodynamics)</li>
 						<li>AE 220 (Aerospace Structural Mechanics)</li>
 						<li>AE 230 (Modelling and Simulation Laboratory)</li>
-						<li>IC 211 (Experimentation and Simulation Laboratory)</li>
+						<li>IC 211 (Experimentation and Measurement Laboratory)</li>
 						<li>MA 214 (Numerical Analysis)</li>
 						<td>Honors Elective</td>
 						<li>AE 639 (Continuum Mechanics)</li>
 						<td>Additional Learning</td>
-						<li>CS 213 (Data Structure and Algorithms)</li>
+						<li>CS 213 (Data Structures and Algorithms)</li>
 						<hr/>
 						<td><b>Semester 3</b></td><br/>
 						<td>Core Requirement</td>
@@ -140,6 +143,24 @@
 					</li>
 				</ul>
 			</div>
+			<div style = "width: 50vw; position: absolute; right: 0em; padding: 2em;">
+				<b>Performance so far</b>
+				<br/>
+				CPI: 8.97
+				<br/>
+				Credited Courses completed: 36
+				<br/>
+				Core Requirement: 30
+				<br/>
+				Honors Electives: 2
+				<br/>
+				Minor: 2
+				<br/>
+				Additional Learning: 2
+				<br/>
+				<div id="cpi-chart" style="margin: 2em;"></div>
+				<div id="course-chart" style="margin: 2em;"></div>
+			</div>
 		</div>
 		<div id = "projects" style = "font-size: 1.5em; position: relative; display: none;">
 			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
@@ -172,7 +193,7 @@
 		<div id = "resume" style = "font-size: 1.5em; position: relative; display: none;">
 			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
 				You can get my resume <a href = "resources/120010038 - 1.pdf">here</a>.
-				<object data="resources/120010038 - 1.pdf" type="application/pdf" width="100%" height="500px">
+				<object data="resources/120010038 - 1.pdf" type="application/pdf" width="100%" height="500px" style = "margin-top: 2em">
 				</object>
 			</div>
 		</div>
