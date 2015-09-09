@@ -22,16 +22,21 @@
 	</head>
 
 	<body class = "Dual-300">
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style = "background-color: rgba(0,0,0,0.8); border-bottom: 2px solid white; position: fixed;">
+		<div id = "landing" style = "position:fixed; z-index:1000; width:100vw; height:100vh; line-height: 100vh; background-color: gray;">
+			<span id="landing-text" style="">
+				<!-- Hi! -->
+			</span>
+		</div>
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style = "background-color: rgba(50,50,50,1.0); position: fixed; z-index: 100;">
 			<div class="container-fluid">
 				<ul class="nav navbar-nav" style = "padding: 0.5em; font-size: 1.5em;">
-				<li id = "home-nav"><a href="#">Home</a></li>
+				<li class="nav-text" id = "home-nav"><a href="#">Home</a></li>
 				<!-- <li id = "about-me-nav"><a href="#">About me</a></li> -->
-				<li id = "courses-nav"><a href="#">Courses</a></li>
-				<li id = "projects-nav"><a href="#">Projects</a></li>
-				<li id = "internships-nav"><a href="#">Internships</a></li>
-				<li id = "resume-nav"><a href="#">Resume</a></li>
-				<li id = "contact-nav"><a href="#">Contact</a></li>
+				<li class="nav-text" id = "courses-nav"><a href="#">Courses</a></li>
+				<li class="nav-text" id = "projects-nav"><a href="#">Projects</a></li>
+				<li class="nav-text" id = "internships-nav"><a href="#">Internships</a></li>
+				<li class="nav-text" id = "resume-nav"><a href="#">Resume</a></li>
+				<li class="nav-text" id = "contact-nav"><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>

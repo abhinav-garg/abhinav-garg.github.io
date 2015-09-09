@@ -31,6 +31,23 @@
 	border-color: white;
 }
 
+div#landing {
+	position:absolute; 
+	z-index:1000; 
+	width:100vw; 
+	height:100vh; 
+	background-color: gray;
+	opacity: 1.0;
+	text-align: center;
+}
+
+#landing-text {
+	color: white;
+	font-size: 5em;
+	display: none;   
+	/* Above needed to get fadeIn fadeOut to work */
+}
+
 body {
 	position: relative;
 	/*font-family: Code-Pro-Light-Demo;*/
@@ -46,6 +63,13 @@ body {
 nav {
 	border-radius: 0px;
 	color: white;
+	z-index: 100;
+	border-bottom: 2px solid white;
+}
+
+.nav-text {
+	margin-left: 3.5vw; 
+	margin-right: 3.5vw;
 }
 
 .footer {

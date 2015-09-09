@@ -1,6 +1,18 @@
 $(document).ready(function() {
 	// $("nav").slideDown("slow");
 	// $('div').hide();
+	var duration = 1500;
+	$("#landing-text").text("Hi!");
+	$("span#landing-text").fadeIn(duration, function() {
+		$("span#landing-text").fadeOut(duration, function() {
+			$("#landing-text").text("Welcome to my page");
+			$("span#landing-text").fadeIn(duration, function() {
+				$("span#landing-text").fadeOut(duration, function() {
+					$("div#landing").fadeOut(duration);
+				});
+			});
+		});
+	});
 	var last = $("#home");
 	$("#home-nav").click(function(){
 		last.hide();
@@ -51,7 +63,7 @@ $(document).ready(function() {
 		        plotOptions: {
 		            series: {
 		                animation: {
-		                    duration: 3000
+		                    duration: 1500
 		                }
 		            }
 		        },
