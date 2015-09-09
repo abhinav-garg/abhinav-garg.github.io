@@ -47,6 +47,14 @@ $(document).ready(function() {
 		            headerFormat: '{point.y} - ', 
 		            pointFormat: '{series.name}'
 		        },
+		        // Set the duration of animation
+		        plotOptions: {
+		            series: {
+		                animation: {
+		                    duration: 3000
+		                }
+		            }
+		        },
 		        series: [{
 		            name: 'SPI',
 		            data: [9.39, 8.94, 8.47, 9.58, 8.56]
@@ -97,6 +105,11 @@ $(document).ready(function() {
 		                pointPadding: 0.2,
 		                borderWidth: 0,
 		                color: 'gray'
+		            },
+		            series: {
+		                animation: {
+		                    duration: 4000
+		                }
 		            }
 		        },
 		        series: [{
