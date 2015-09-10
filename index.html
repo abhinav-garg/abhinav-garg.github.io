@@ -12,52 +12,54 @@
 		<script type="text/javascript" src="bootstrap.min.js"></script>
 		<script type="text/javascript" src ="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-
+		<!--  
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/modules/exporting.js"></script>
-
+		 -->
 		<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
 		<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
 		<script type="text/javascript" src="js/perfect-scrollbar.with-mousewheel.min.js"></script>
 	</head>
 
 	<body class = "Dual-300">
-		<div id = "landing" style = "position:fixed; z-index:1000; width:100vw; height:100vh; line-height: 100vh; background-color: gray;">
+		<div id = "landing" style = "position:fixed; z-index:1000; margin-left: 20vw; width:80vw; height:100vh; line-height: 100vh; background-color: white;">
 			<span id="landing-text" style="">
-				<!-- Hi! -->
+				<!-- Text will be set by script -->
 			</span>
 		</div>
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style = "background-color: rgba(50,50,50,1.0); position: fixed; z-index: 100;">
+		<nav class="navbar navbar-inverse" id="side-pane" style="position:fixed; height: 100vh; width: 20vw; border-radius: 0;">
 			<div class="container-fluid">
-				<ul class="nav navbar-nav" style = "padding: 0.5em;">
-				<li class="nav-text" id = "home-nav"><a href="#">Home</a></li>
-				<!-- <li id = "about-me-nav"><a href="#">About me</a></li> -->
-				<li class="nav-text" id = "courses-nav"><a href="#">Courses</a></li>
-				<li class="nav-text" id = "projects-nav"><a href="#">Projects</a></li>
-				<li class="nav-text" id = "internships-nav"><a href="#">Internships</a></li>
-				<li class="nav-text" id = "resume-nav"><a href="#">Resume</a></li>
-				<li class="nav-text" id = "contact-nav"><a href="#">Contact</a></li>
+				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
+				<div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');">
+				</div>
+				<ul class="nav navbar-nav" style = "position: absolute; width: 10vw; left: 5vw; top: 35vh;">
+					<li class="nav-text" style="" id = "home-nav"><a href="#">Home</a></li>
+					<li class="nav-text" style="" id = "courses-nav"><a href="#">Courses</a></li>
+					<li class="nav-text" style="" id = "projects-nav"><a href="#">Projects</a></li>
+					<li class="nav-text" style="" id = "internships-nav"><a href="#">Internships</a></li>
+					<li class="nav-text" style="" id = "resume-nav"><a href="#">Resume</a></li>
+					<li class="nav-text" style="" id = "contact-nav"><a href="#">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
+
 		<div id = "home" style = " position: relative;">
-			<div style = "width: 50vw; position: absolute; left: 0em; padding: 2em;">
+			<div class = "full-pane" style = "">
 				Hello there!<br/>
 				My name is Abhinav Garg, and I am an Aerospace Engineering major at Indian Institute of Technology Bombay.<br/>
 				I started this web-page during the summers at the end of sophomore year.
-				You can find on this page the courses that I have done so far, details about the various internships that I have been through
+				You can find on this page the courses that I have done so far, details about the various internships that I have been through,
 				and some chatter about the projects that I have done and would be doing. <br/>
 				<br/>
 				Academics, I feel, is probably my forte, but I am actively involved in a lot of activities outside of it. I really like picking up new languages (programming and spoken likewise), writing (occasionally), playing the guitar and singing, and as for sports, I like to run and swim (though I am not great at either - they're still fun). If you'd like to reach out, please check the <em>Contact</em> menu, and introduce yourself. Cheers!
 			</div>
-			<div style = "width: 50vw; position: absolute; right: 0em; padding: 2em;">
+			<!-- <div class = "half-pane" style = "">
 				<div style = "position: absolute; left: 25vw; margin-left: -5em; top: 25vh; width: 10em; height: 10em; border: 0px solid black; background-image: url('resources/abhinav_garg.jpg'); background-position: top; background-size: cover; background-repeat: none; border-radius: 100%;">
-
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div id = "courses" style = " position: relative; display: none;">
-			<div style = "width: 50vw; position: absolute; left: 0em; padding: 2em;">
+			<div class = "half-pane left-pane" style = "">
 				<ul style="list-style-type: none;">
 					<td><b>IIT Bombay</b><br/>
 					Majoring in <b>Aerospace Engineering</b> (with Honors)<br/>
@@ -157,7 +159,7 @@
 					</li>
 				</ul>
 			</div>
-			<div style = "width: 50vw; position: absolute; right: 0em; padding: 2em;">
+			<div class = "half-pane right-pane" style = "">
 				<b>Academic Performance</b>
 				<br/>
 				CPI: 9.05
@@ -167,7 +169,7 @@
 			</div>
 		</div>
 		<div id = "projects" style = " position: relative; display: none;">
-			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
+			<div class = "full-pane" style = "">
 				<ul style = "list-style-type:circle;">
 				<td><b>Research Interests</b></td>
 				<li>Aerospace Robotics and Controls</li>
@@ -191,7 +193,7 @@
 			</div>
 		</div>
 		<div id = "internships" style = " position: relative; display: none;">
-			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
+			<div class = "full-pane" style = "">
 				<ul style = "list-style-type:none;">
 				<li>GE Aviation</li>
 				<span style = "margin-left:2em;">May-July 2015</span>
@@ -208,14 +210,14 @@
 			</div>
 		</div>
 		<div id = "resume" style = " position: relative; display: none;">
-			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
+			<div class = "full-pane" style = "">
 				You can get my resume <a href = "resources/120010038 - 1.pdf">here</a>.
 				<object data="resources/120010038 - 1.pdf" type="application/pdf" width="100%" height="500px" style = "margin-top: 2em">
 				</object>
 			</div>
 		</div>
 		<div id = "contact" style = " position: relative; display: none;">
-			<div style = "width: 100vw; position: absolute; left: 0em; padding: 2em;">
+			<div class = "full-pane" style = "">
 				<b>Abhinav Garg</b>
 				<br/>
 				Senior Undergraduate
