@@ -14,15 +14,23 @@ $(document).ready(function() {
 		});
 	});
 	var last = $("#home");
+	var lastButton = $("#home-nav");
+	var buttonHighlight = "rgba(100,100,100,0.5)";
 	$("#home-nav").click(function(){
 		last.hide();
+		lastButton.css("background-color", "");
+		$("#home-nav").css("background-color", buttonHighlight);
 		$("#home").fadeIn("slow");
 		last = $("#home");
+		lastButton = $("#home-nav");
 	});
 	$("#courses-nav").click(function(){
 		last.hide();
+		lastButton.css("background-color", "");
+		$("#courses-nav").css("background-color", buttonHighlight);
 		$("#courses").fadeIn("slow");
 		last = $("#courses");
+		lastButton = $("#courses-nav");
 
 		// Displays CPI over the semesters
 		$(function () {
@@ -76,79 +84,41 @@ $(document).ready(function() {
 		        }]
 		    });
 		});
-		// Displays course statistics
-		// $(function () {
-		//     $('#course-chart').highcharts({
-		//         chart: {
-		//             type: 'column'
-		//         },
-		//         title: {
-		//             text: 'Grading Statistics'
-		//         },
-		//         xAxis: {
-		//             categories: [
-		//                 '4 (DD)',
-		//                 '5 (CD)',
-		//                 '6 (CC)',
-		//                 '7 (BC)',
-		//                 '8 (BB)',
-		//                 '9 (AB)',
-		//                 '10 (AA)',
-		//                 '10 (AP)'
-		//             ]
-		//         },
-		//         yAxis: {
-		//             min: 0,
-		//             allowDecimals: false,
-		//             title: {
-		//                 text: 'Number of courses'
-		//             }
-		//         },
-		//         tooltip: {
-		//             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-		//             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-		//                 '<td style="padding:0"><b>{point.y}</b></td></tr>',
-		//             footerFormat: '</table>',
-		//             shared: true,
-		//             useHTML: true
-		//         },
-		//         plotOptions: {
-		//             column: {
-		//                 pointPadding: 0.2,
-		//                 borderWidth: 0,
-		//                 color: 'gray'
-		//             },
-		//             series: {
-		//                 animation: {
-		//                     duration: 4000
-		//                 }
-		//             }
-		//         },
-		//         series: [{
-		//             name: 'Number of Courses',
-		//             data: [0, 1, 2, 3, 9, 9, 11, 1]
-		//         }]
-		//     });
-		// });
 	});
 	$("#projects-nav").click(function(){
 		last.hide();
+		lastButton.css("background-color", "");
+		$("#projects-nav").css("background-color", buttonHighlight);
 		$("#projects").fadeIn("slow");
 		last = $("#projects");
+		lastButton = $("#projects-nav");
+
 	});
 	$("#internships-nav").click(function(){
 		last.hide();
+		lastButton.css("background-color", "");
+		$("#internships-nav").css("background-color", buttonHighlight);
 		$("#internships").fadeIn("slow");
 		last = $("#internships");
+		lastButton = $("#internships-nav");
+
 	});
 	$("#contact-nav").click(function(){
 		last.hide();
+		lastButton.css("background-color", "");
+		$("#contact-nav").css("background-color", buttonHighlight);
 		$("#contact").fadeIn("slow");
 		last = $("#contact");
+		lastButton = $("#contact-nav");
+
 	});
 	$("#resume-nav").click(function(){
 		last.hide();
+		lastButton.css("background-color", "");
+		$("#resume-nav").css("background-color", buttonHighlight);
 		$("#resume").fadeIn("slow");
 		last = $("#resume");
+		lastButton = $("#resume-nav");
+
 	});
 });
