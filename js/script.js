@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	// $("nav").slideDown("slow");
 	// $('div').hide();
+	$("#loading").hide();
 	var duration = 1500;
 	$("#landing-text").text("Hi!");
 	$("span#landing-text").fadeIn(duration, function() {
