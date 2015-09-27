@@ -1,6 +1,12 @@
 $(document).ready(function() {
 	// $("nav").slideDown("slow");
 	// $('div').hide();
+	// var url = "";
+	// $.ajax({
+	// 	type: "POST",
+	// 	url: url,
+	// 	data: 
+	// });
 	$("#loading").hide();
 	var duration = 1500;
 	$("#landing-text").text("Hi!");

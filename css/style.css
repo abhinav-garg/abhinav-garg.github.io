@@ -74,7 +74,7 @@ nav {
 	position: absolute;
 	/*border: 1px dotted yellow;*/
 	text-align: center; 
-	width: 10vw;
+	width: 20vw;
 }
 
 #display-image {
@@ -94,10 +94,12 @@ nav {
 
 .half-pane {
 	width: 40vw; position: absolute; left: 0em; padding: 2em;
+	z-index: 90;
 }
 
 .left-pane {
 	margin-left: 20vw;
+	z-index: 90;
 }
 
 .right-pane {
@@ -106,6 +108,7 @@ nav {
 
 .full-pane {
 	margin-left: 20vw; width: 80vw; position: absolute; left: 0em; padding: 2em;
+	z-index: 90;
 }
 
 .footer {
