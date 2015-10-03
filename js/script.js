@@ -20,6 +20,9 @@ $(document).ready(function() {
 			});
 		});
 	});
+	$("#landing").click(function(){
+		$("#landing").hide();
+	});
 	var last = $("#home");
 	var lastButton = $("#home-nav");
 	var buttonHighlight = "rgba(100,100,100,0.5)";
