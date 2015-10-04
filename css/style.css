@@ -15,22 +15,6 @@
 	font-style: normal;
 }
 
-.btn-transparent {
-	background-color: transparent;
-	border-color: white;
-	font-size: 1em;
-}
-.btn-transparent:hover {
-	background-color: transparent;
-	border-color: white;
-	box-shadow: 0px 0px 5px 0px white;
-	/*horizontal-offset vertical-offset blur-radius color*/
-}
-.btn-transparent:focus {
-	background-color: transparent;
-	border-color: white;
-}
-
 div#landing {
 	position:absolute; 
 	z-index:1000; 
@@ -54,7 +38,7 @@ body {
 	color: black;
 	/*font-family: NasalizationRg-Regular;*/
 	/*font-family: Ephesus-demo-ExtraBold;*/
-	font-size: 2.9vh;
+	font-size: 1.5em;
 	/*font-weight:	 bold;*/
 	/*padding-top: 70px;*/
 	overflow-x: hidden;
@@ -70,60 +54,79 @@ nav {
 }
 
 .side-pane {
-	position:fixed; height: 100vh; width: 20vw; border-radius: 0; padding: 0px;
+	/*position:fixed; */
+	/*height: 100vh; width: 20vw; border-radius: 0; padding: 0px;*/
 }
 
 .nav {
-	position: absolute; width: 20vw; left: 0vw; top: 35vh;
+	/*position: absolute; */
+	/*width: 20vw; */
+	/*left: 0vw; */
+	/*top: 35vh;*/
 }
 
 .nav-text {
 	/*margin-left: 3.5vw; */
 	/*margin-right: 3.5vw;*/
-	position: absolute;
+	/*position: absolute;*/
 	/*border: 1px dotted yellow;*/
 	text-align: center; 
-	width: 20vw;
+	/*width: 20vw;*/
 }
 
 #display-image {
-	/*margin-top:10vh; */
 	position: absolute;
-	/* top right bottom left */
-	left: 5vw; top: 10vh;
-	/*margin: 10vh 5vw 0vh 5vw;*/
-	width: 10vw; 
-	height: 10vw; 
-	border: 0px solid gray; 
-	background-position: top; 
-	background-size: cover; 
-	background-repeat: none; 
+	left: 15vw;
+	margin-left: -6vw;
+	top: 25vh;
+	width: 12vw;
+	height: 12vw;
+	border: 0px solid black;
+	background-image: url('../resources/abhinav_garg.jpg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: none;
 	border-radius: 100%;
 }
 
+#responsive-dp {
+	display: none;
+}
+
 .half-pane {
-	width: 40vw; 
+	width: 50vw; 
 	position: absolute; 
 	left: 0em; 
-	padding: 2em;
+	/* top right bottom left */
+	padding: 2em 8em 2em 8em;
 	z-index: 90;
 }
 
 .left-pane {
-	margin-left: 20vw;
+	/*margin-left: 20vw;*/
 	z-index: 90;
 }
 
 .right-pane {
-	margin-left: 60vw;
+	margin-left: 50vw;
+}
+
+#home-left-pane {
+	width: 70vw;
+}
+
+#home-right-pane {
+	width: 30vw; 
+	margin-left: 70vw;
 }
 
 .full-pane {
-	margin-left: 20vw; 
-	width: 80vw; 
+	/*margin-left: 20vw; */
+	width: 100vw; 
 	position: absolute; 
 	left: 0em; 
-	padding: 2em;
+	/* top right bottom left */
+	padding: 2em 8em 2em 8em;
 	z-index: 90;
 }
 
@@ -132,14 +135,15 @@ nav {
 	position: fixed;
 	top: 95vh;
 	right: 0vw;
-	width: 40vw;
+	width: 100vw;
 	height: 5vh;
 	padding: 1vh;
-	border-top: 0px solid gray;
-	color: gray;
+	/*border: 1px solid gray;*/
+	color: black;
 	font-size: 2vh;
-	background-color: rgba(25,25,25,0.9);
+	background-color: rgb(246,246,246);
 	border-radius: 0.5em 0em 0em 0em;
+	z-index: 1000000;
 }
 
 .footer {
@@ -151,36 +155,80 @@ nav {
 }
 
 /* Applies when viewing on a portrait device */
-@media screen and (max-aspect-ratio: 1/1) { 
-.side-pane {
-	position:fixed; height: 100vh; width: 10vw; border-radius: 0; padding: 0px;
-}
+/*@media screen and (max-aspect-ratio: 1/1) { */
+/* 768px is when bootstrap navbar collapses */
+@media (max-width: 768px) { 
+	/* Right half panes can be safely ignored */
+	.half-pane {
+		width: 100vw; 
+		height: auto;
+		/* Relative position leads to divs clearing each other */
+		/*position: relative;   */
+		/*display: block;*/
+		/*float: right;*/
+		/*clear: both;*/
+		/* top right bottom left */
+		padding: 2em 8em 2em 8em;
+		z-index: 90;
+		/*border: 2px dashed red;*/
+	}
 
-#display-image {
-	/*margin-top:10vh; */
-	position: absolute;
-	/* top right bottom left */
-	left: 0.5vw; top: 10vh;
-	/*margin: 10vh 5vw 0vh 5vw;*/
-	width: 9vw; 
-	height: 9vw; 
-	border: 0px solid gray; 
-	background-position: top; 
-	background-size: cover; 
-	background-repeat: none; 
-	border-radius: 100%;
-}
+	.left-pane {
+		/*margin-left: 20vw;*/
+		width: 100vw;
+	}
 
-.nav {
-	position: absolute; width: 10vw; left: 0vw; top: 35vh;
-}
+	.right-pane {
+		display: none;
+	}
 
-.nav-text {
-	/*margin-left: 3.5vw; */
-	/*margin-right: 3.5vw;*/
-	position: absolute;
-	/*border: 1px dotted yellow;*/
-	text-align: center; 
-	width: 10vw;
-}	
+	#home-left-pane {
+		width: 100vw; 
+		height: auto;
+	}
+
+	#home-right-pane {
+		display: none;
+	}
+	
+	#responsive-dp {
+		display: block;
+		width: 2em;
+		height: 2em;
+		/* top right bottom left */
+		margin: 0.3em 0.3em 0.3em 0.3em;
+		border: 0px solid black;
+		background-image: url('../resources/abhinav_garg.jpg');
+		background-position: top;
+		background-size: cover;
+		background-repeat: none;
+		border-radius: 100%;
+	}
+
+	.full-pane {
+		/*margin-left: 20vw; */
+		width: 100vw; 
+		position: relative; 
+		left: 0em; 
+		/* top right bottom left */
+		padding: 2em 8em 2em 8em;
+		z-index: 90;
+	}
+
+	.hover-footer {
+		text-align: right;
+		position: fixed;
+		top: 95vh;
+		right: 0vw;
+		width: 100vw;
+		height: 5vh;
+		padding: 1vh;
+		/*border: 1px solid gray;*/
+		color: black;
+		font-size: 2vh;
+		background-color: rgb(246,246,246);
+		border-radius: 0.5em 0em 0em 0em;
+		z-index: 1000000;
+	}
+
 }

@@ -14,9 +14,9 @@
 	    <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<script type="text/javascript" src="bootstrap.min.js"></script>
 		<script type="text/javascript" src ="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/modules/exporting.js"></script>
@@ -45,29 +45,53 @@
 				</ul>
 			</div>
 		</nav> -->
-		<nav class="navbar navbar-inverse side-pane" style="">
+		<nav class="navbar navbar-default" style="">
 			<div class="container-fluid">
-				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
-				<div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');"></div>
+
+				<!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			    		<span class="sr-only">Toggle navigation</span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			    		<span class="icon-bar"></span>
+			 		</button>
+			    	<!-- <p class="navbar-brand" id="responsive-dp" style = ""></p> -->
+					<span class="navbar-brand" id="responsive-dp" style = ""></span>
+			    	<p class="navbar-brand" href="#">
+						Abhinav Garg
+				    </p>
+				</div>
 				
-				<ul class="nav navbar-nav" role="tablist" style = "">
-					<li id = "home-nav" role="presentation" class="nav-text active"><a href="#">Home</a></li>
-					<li id = "courses-nav" role="presentation" class="nav-text "><a href="#">Courses</a></li>
-					<li id = "projects-nav" role="presentation" class="nav-text "><a href="#">Projects</a></li>
-					<li id = "internships-nav" role="presentation" class="nav-text "><a href="#">Internships</a></li>
-					<li id = "resume-nav" role="presentation" class="nav-text "><a href="#">Resume</a></li>
-					<li id = "contact-nav" role="presentation" class="nav-text "><a href="#">Contact</a></li>
-					<li id = "blog-nav" role="presentation" class="nav-text "><a href="#">Blog</a></li>
-				</ul>
+				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
+				<!-- <div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');"></div> -->
+				
+				<!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav" style = "">
+						<li id = "home-nav" class="nav-text active"><a href="#">Home</a></li>
+						<li id = "courses-nav" class="nav-text "><a href="#">Courses</a></li>
+						<li id = "projects-nav" class="nav-text "><a href="#">Projects</a></li>
+						<li id = "internships-nav" class="nav-text "><a href="#">Internships</a></li>
+						<li id = "resume-nav" class="nav-text "><a href="#">Resume</a></li>
+						<li id = "contact-nav" class="nav-text "><a href="#">Contact</a></li>
+						<li role="separator" class="divider"></li>
+						<li id = "blog-nav" class="nav-text "><a href="#">Blog</a></li>
+					</ul>
+				</div>
 			</div>
 		</nav>
+
 		<div class="hover-footer" style="">
-			Last updated: 26th September 2015 | 
-			This page uses bootstrap, jQuery and highcharts
+			Last updated: 5th October 2015
 		</div>
 
 		<div id = "home" style = "position: relative;">
-			<div class = "full-pane" style = "">
+			<div class = "half-pane" id="home-right-pane" style = "">
+				<div id="display-image" style = "">
+				</div>
+			</div>
+			<div class = "half-pane" id="home-left-pane" style = "">
 				Hello there!<br/><br/>
 
 				My name is Abhinav Garg, and I am currently a student at Indian Institute of Technology Bombay. I will be graduating in 2017 with a Bachelor's and a Master's degree in Aerospace Engineering.<br/><br/>
@@ -80,10 +104,6 @@
 
 				If you'd like to reach out, please check the <em>Contact</em> menu, and introduce yourself. Cheers!
 			</div>
-			<!-- <div class = "half-pane right-pane" style = "">
-				<div style = "position: absolute; left: 25vw; margin-left: -5em; top: 25vh; width: 10em; height: 10em; border: 0px solid black; background-image: url('resources/abhinav_garg.jpg'); background-position: top; background-size: cover; background-repeat: none; border-radius: 100%;">
-				</div>
-			</div> -->
 		</div>
 		<div id = "courses" style = " position: relative; display: none;">
 			<div class = "half-pane left-pane" style = "">
