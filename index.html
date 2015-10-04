@@ -27,14 +27,12 @@
 	</head>
 
 	<body class = "Dual-300">
-		<div id = "landing" style = "position:fixed; z-index:1000; margin-left: 20vw; width:80vw; height:100vh; line-height: 100vh; background-color: white;">
+		<!-- <div id = "landing" style = "position:fixed; z-index:1000; width:100vw; height:100vh; line-height: 100vh; background-color: white;">
 			<span id="landing-text" style="">
-				<!-- Text will be set by script -->
+				
 			</span>
-		</div>
-		<nav class="navbar navbar-inverse" id="side-pane" style="position:fixed; height: 100vh; width: 20vw; border-radius: 0; padding: 0px;">
-			<div class="container-fluid">
-				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
+		</div> -->
+				<!-- Will need to use absolute positioning to properly aling - margin was not working ->
 				<div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');"></div>
 				<ul class="nav navbar-nav" style = "position: absolute; width: 20vw; left: 0vw; top: 35vh;">
 					<li class="nav-text" style="background-color: rgba(100,100,100,0.5);" id = "home-nav"><a href="#">Home</a></li>
@@ -46,13 +44,29 @@
 					<li class="nav-text" style="" id = "blog-nav"><a href="#">Blog</a></li>
 				</ul>
 			</div>
+		</nav> -->
+		<nav class="navbar navbar-inverse side-pane" style="">
+			<div class="container-fluid">
+				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
+				<div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');"></div>
+				
+				<ul class="nav navbar-nav" role="tablist" style = "">
+					<li id = "home-nav" role="presentation" class="nav-text active"><a href="#">Home</a></li>
+					<li id = "courses-nav" role="presentation" class="nav-text "><a href="#">Courses</a></li>
+					<li id = "projects-nav" role="presentation" class="nav-text "><a href="#">Projects</a></li>
+					<li id = "internships-nav" role="presentation" class="nav-text "><a href="#">Internships</a></li>
+					<li id = "resume-nav" role="presentation" class="nav-text "><a href="#">Resume</a></li>
+					<li id = "contact-nav" role="presentation" class="nav-text "><a href="#">Contact</a></li>
+					<li id = "blog-nav" role="presentation" class="nav-text "><a href="#">Blog</a></li>
+				</ul>
+			</div>
 		</nav>
-		<div style="text-align: right; position: fixed; top: 95vh; right: 0vw; width: 40vw; height: 5vh; padding: 1vh; border-top: 0px solid gray; color: gray; font-size: 2vh; background-color: rgba(25,25,25,0.9); border-radius: 0.5em 0em 0em 0em;">
+		<div class="hover-footer" style="">
 			Last updated: 26th September 2015 | 
 			This page uses bootstrap, jQuery and highcharts
 		</div>
 
-		<div id = "home" style = " position: relative;">
+		<div id = "home" style = "position: relative;">
 			<div class = "full-pane" style = "">
 				Hello there!<br/><br/>
 
@@ -66,7 +80,7 @@
 
 				If you'd like to reach out, please check the <em>Contact</em> menu, and introduce yourself. Cheers!
 			</div>
-			<!-- <div class = "half-pane" style = "">
+			<!-- <div class = "half-pane right-pane" style = "">
 				<div style = "position: absolute; left: 25vw; margin-left: -5em; top: 25vh; width: 10em; height: 10em; border: 0px solid black; background-image: url('resources/abhinav_garg.jpg'); background-position: top; background-size: cover; background-repeat: none; border-radius: 100%;">
 				</div>
 			</div> -->

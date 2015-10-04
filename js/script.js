@@ -28,18 +28,18 @@ $(document).ready(function() {
 	var buttonHighlight = "rgba(100,100,100,0.5)";
 	$("#home-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#home-nav").css("background-color", buttonHighlight);
+		$("#home-nav").toggleClass("active");
 		$("#home").fadeIn("slow");
 		last = $("#home");
 		lastButton = $("#home-nav");
 	});
 	$("#courses-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#courses-nav").css("background-color", buttonHighlight);
+		$("#courses-nav").toggleClass("active");
 		$("#courses").fadeIn("slow");
 		last = $("#courses");
 		lastButton = $("#courses-nav");
@@ -99,9 +99,9 @@ $(document).ready(function() {
 	});
 	$("#projects-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#projects-nav").css("background-color", buttonHighlight);
+		$("#projects-nav").toggleClass("active");
 		$("#projects").fadeIn("slow");
 		last = $("#projects");
 		lastButton = $("#projects-nav");
@@ -109,9 +109,9 @@ $(document).ready(function() {
 	});
 	$("#internships-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#internships-nav").css("background-color", buttonHighlight);
+		$("#internships-nav").toggleClass("active");
 		$("#internships").fadeIn("slow");
 		last = $("#internships");
 		lastButton = $("#internships-nav");
@@ -119,9 +119,9 @@ $(document).ready(function() {
 	});
 	$("#contact-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#contact-nav").css("background-color", buttonHighlight);
+		$("#contact-nav").toggleClass("active");
 		$("#contact").fadeIn("slow");
 		last = $("#contact");
 		lastButton = $("#contact-nav");
@@ -129,9 +129,9 @@ $(document).ready(function() {
 	});
 	$("#resume-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#resume-nav").css("background-color", buttonHighlight);
+		$("#resume-nav").toggleClass("active");
 		$("#resume").fadeIn("slow");
 		last = $("#resume");
 		lastButton = $("#resume-nav");
@@ -139,9 +139,9 @@ $(document).ready(function() {
 	});
 	$("#blog-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
-		last.hide();
+		last.hide(); lastButton.removeClass("active");
 		lastButton.css("background-color", "");
-		$("#blog-nav").css("background-color", buttonHighlight);
+		$("#blog-nav").toggleClass("active");
 		$("#blog").fadeIn("slow");
 		last = $("#blog");
 		lastButton = $("#blog-nav");

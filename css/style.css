@@ -65,7 +65,16 @@ nav {
 	color: white;
 	z-index: 100;
 	/*border-bottom: 2px solid white;*/
-	font-size: 3vh;
+	/*font-size: 3vh;*/
+
+}
+
+.side-pane {
+	position:fixed; height: 100vh; width: 20vw; border-radius: 0; padding: 0px;
+}
+
+.nav {
+	position: absolute; width: 20vw; left: 0vw; top: 35vh;
 }
 
 .nav-text {
@@ -93,7 +102,10 @@ nav {
 }
 
 .half-pane {
-	width: 40vw; position: absolute; left: 0em; padding: 2em;
+	width: 40vw; 
+	position: absolute; 
+	left: 0em; 
+	padding: 2em;
 	z-index: 90;
 }
 
@@ -107,8 +119,27 @@ nav {
 }
 
 .full-pane {
-	margin-left: 20vw; width: 80vw; position: absolute; left: 0em; padding: 2em;
+	margin-left: 20vw; 
+	width: 80vw; 
+	position: absolute; 
+	left: 0em; 
+	padding: 2em;
 	z-index: 90;
+}
+
+.hover-footer {
+	text-align: right;
+	position: fixed;
+	top: 95vh;
+	right: 0vw;
+	width: 40vw;
+	height: 5vh;
+	padding: 1vh;
+	border-top: 0px solid gray;
+	color: gray;
+	font-size: 2vh;
+	background-color: rgba(25,25,25,0.9);
+	border-radius: 0.5em 0em 0em 0em;
 }
 
 .footer {
@@ -117,4 +148,39 @@ nav {
 	display: block;
 	position: absolute;
 	bottom: 0em;
+}
+
+/* Applies when viewing on a portrait device */
+@media screen and (max-aspect-ratio: 1/1) { 
+.side-pane {
+	position:fixed; height: 100vh; width: 10vw; border-radius: 0; padding: 0px;
+}
+
+#display-image {
+	/*margin-top:10vh; */
+	position: absolute;
+	/* top right bottom left */
+	left: 0.5vw; top: 10vh;
+	/*margin: 10vh 5vw 0vh 5vw;*/
+	width: 9vw; 
+	height: 9vw; 
+	border: 0px solid gray; 
+	background-position: top; 
+	background-size: cover; 
+	background-repeat: none; 
+	border-radius: 100%;
+}
+
+.nav {
+	position: absolute; width: 10vw; left: 0vw; top: 35vh;
+}
+
+.nav-text {
+	/*margin-left: 3.5vw; */
+	/*margin-right: 3.5vw;*/
+	position: absolute;
+	/*border: 1px dotted yellow;*/
+	text-align: center; 
+	width: 10vw;
+}	
 }
