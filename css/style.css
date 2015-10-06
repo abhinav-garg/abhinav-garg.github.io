@@ -102,6 +102,7 @@ nav {
 	width: 40vw; 
 	position: absolute; 
 	left: 0em; 
+	top: 10vh;
 	/* top right bottom left */
 	padding: 2em 2em 2em 2em;
 	z-index: 90;
@@ -132,6 +133,7 @@ nav {
 	/*margin-left: 20vw; */
 	width: 80vw; 
 	position: absolute; 
+	top: 10vh;
 	left: 0em; 
 	/* top right bottom left */
 	margin-left: 10vw;
@@ -165,9 +167,9 @@ nav {
 }
 
 /* Applies when viewing on a portrait device */
-@media screen and (max-aspect-ratio: 1/1) { 
+/*@media screen and (max-aspect-ratio: 1/1) { */
 /* 768px is when bootstrap navbar collapses */
-/*@media (max-width: 768px) { */
+@media (max-width: 768px) { 
 	/* Right half panes can be safely ignored */
 	.half-pane {
 		width: 100vw; 
