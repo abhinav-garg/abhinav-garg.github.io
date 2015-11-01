@@ -43,13 +43,32 @@ body {
 	/*padding-top: 70px;*/
 	overflow-x: hidden;
 	/*background-color: #3498db;*/
-	background-color: #bdc3c7;
+	/*background-color: #bdc3c7;*/
+	/*border-top: 2vh solid black;*/
 }
 
+#header {
+	border-top: 2vh solid black;
+	margin: 0px;
+	/*font-size: 4vh;*/
+	/*border: 2px dashed yellow;*/
+	/*padding: 6vh;*/
+}
+
+/*div {
+	border: 1px solid black;
+}*/
+
 nav {
-	border-radius: 0px;
 	color: white;
 	z-index: 100;
+	width: 90vw;
+	/*border-radius: 10vh;*/
+	position: fixed;
+	top: 2vh;
+	left: 50vw;
+	margin-left: -45vw;
+	/*border: 200px dashed yellow;*/
 	/*border-bottom: 2px solid white;*/
 	/*font-size: 3vh;*/
 }
@@ -102,7 +121,7 @@ nav {
 	width: 40vw; 
 	position: absolute; 
 	left: 0em; 
-	top: 10vh;
+	top: 5vh;
 	/* top right bottom left */
 	padding: 2em 2em 2em 2em;
 	z-index: 90;
@@ -133,7 +152,7 @@ nav {
 	/*margin-left: 20vw; */
 	width: 80vw; 
 	position: absolute; 
-	top: 10vh;
+	top: 5vh;
 	left: 0em; 
 	/* top right bottom left */
 	margin-left: 10vw;
@@ -151,10 +170,10 @@ nav {
 	height: 5vh;
 	padding: 1vh;
 	/*border: 1px solid gray;*/
-	color: black;
+	color: white;
 	font-size: 2vh;
-	background-color: rgb(246,246,246);
-	border-radius: 0.5em 0em 0em 0em;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 0em;
 	z-index: 1000000;
 }
 
@@ -243,10 +262,10 @@ nav {
 		height: 5vh;
 		padding: 1vh;
 		/*border: 1px solid gray;*/
-		color: black;
+		color: white;
 		font-size: 2vh;
-		background-color: rgb(246,246,246);
-		border-radius: 0.5em 0em 0em 0em;
+		background-color: rgba(0,0,0,0.8);
+		border-radius: 0em;
 		z-index: 1000000;
 	}
 
