@@ -15,6 +15,17 @@
 	font-style: normal;
 }
 
+#test_1 {
+	font-family: 'Passion One', cursive;
+	font-size: 3em;
+	color: rgba(50,50,50,1);
+}
+
+#test_2 {
+	/*font-family: 'Open Sans Condensed', sans-serif;*/
+	font-size: 1.5em;
+}
+
 div#landing {
 	position:absolute; 
 	z-index:1000; 
@@ -41,11 +52,27 @@ body {
 	font-size: 1.5em;
 	/*font-weight:	 bold;*/
 	/*padding-top: 70px;*/
-	overflow-x: hidden;
-	/*background-color: #3498db;*/
-	/*background-color: #bdc3c7;*/
+	/*HIDING OVERFLOW IN X AND Y*/
+	overflow-x: hidden; 
+	overflow-y: hidden;
 	/*border-top: 2vh solid black;*/
 }
+/*Pseduo element*/
+body::after {
+	content: "";
+	background-image: url('../resources/background.jpg');
+	background-size: cover;
+	opacity: 0.5;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	z-index: -1;   
+}
+
 
 #header {
 	border-top: 2vh solid black;

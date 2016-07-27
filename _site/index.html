@@ -8,44 +8,35 @@
 	<head>
 		<title>Abhinav Garg</title>
 
-		<!-- Bootstrap or Themes -->
 		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	    <!-- <link href="css/flat-ui.css" rel="stylesheet" type="text/css"> -->
 	    <link href="css/prettify.css" rel="stylesheet" type="text/css">
 	    <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		<!-- FONT -->
-		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Passion+One|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 
-		<!-- jQuery -->
+		<script type="text/javascript" src="bootstrap.min.js"></script>
 		<script type="text/javascript" src ="js/jquery-1.11.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		
-		<!-- MathJax -->
-		<script src='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></script>
-
-		<!-- High Charts -->
 		<script src="http://code.highcharts.com/highcharts.js"></script>
 		<script src="http://code.highcharts.com/modules/exporting.js"></script>
 		
-		<!-- Scrollbar -->
 		<link rel="stylesheet" type="text/css" href="css/perfect-scrollbar.min.css">
 		<script type="text/javascript" src="js/perfect-scrollbar.min.js"></script>
 		<script type="text/javascript" src="js/perfect-scrollbar.with-mousewheel.min.js"></script>
 	</head>
 
 	<body class = "Dual-300">
-		<!-- <div id = "landing" style = "position:fixed; z-index:1000; width:100vw; height:100vh; line-height: 100vh; background-color: white;">
+		<div id = "landing" style = "position:fixed; z-index:1000; margin-left: 20vw; width:80vw; height:100vh; line-height: 100vh; background-color: white;">
 			<span id="landing-text" style="">
-				
+				<!-- Text will be set by script -->
 			</span>
-		</div> -->
-				<!-- Will need to use absolute positioning to properly aling - margin was not working ->
+		</div>
+		<nav class="navbar navbar-inverse" id="side-pane" style="position:fixed; height: 100vh; width: 20vw; border-radius: 0;">
+			<div class="container-fluid">
+				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
 				<div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');"></div>
-				<ul class="nav navbar-nav" style = "position: absolute; width: 20vw; left: 0vw; top: 35vh;">
+				<ul class="nav navbar-nav" style = "position: absolute; width: 10vw; left: 5vw; top: 35vh;">
 					<li class="nav-text" style="background-color: rgba(100,100,100,0.5);" id = "home-nav"><a href="#">Home</a></li>
 					<li class="nav-text" style="" id = "courses-nav"><a href="#">Courses</a></li>
 					<li class="nav-text" style="" id = "projects-nav"><a href="#">Projects</a></li>
@@ -55,99 +46,32 @@
 					<li class="nav-text" style="" id = "blog-nav"><a href="#">Blog</a></li>
 				</ul>
 			</div>
-		</nav> -->
-		<!-- <div id="header" style="">
-		
-		</div> -->
-		<nav class="navbar navbar-default navbar-inverse" style="">
-			<div class="container-fluid">
-
-				<!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			    		<span class="sr-only">Toggle navigation</span>
-			    		<span class="icon-bar"></span>
-			    		<span class="icon-bar"></span>
-			    		<span class="icon-bar"></span>
-			 		</button>
-			    	<span class="navbar-brand" id="responsive-dp" style = ""></span>
-			    	<p class="navbar-brand" href="#">
-						Abhinav Garg
-				    </p>
-				</div>
-				
-				<!-- Will need to use absolute positioning to properly aling - margin was not working -->
-				<!-- <div id ="display-image" style="background-image: url('resources/abhinav_garg.jpg');"></div> -->
-				
-				<!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav" style = "">
-						<li id = "home-nav" class="nav-text active"><a href="#">Home</a></li>
-						<li id = "courses-nav" class="nav-text "><a href="#">Courses</a></li>
-						<li id = "projects-nav" class="nav-text "><a href="#">Projects</a></li>
-						<li id = "internships-nav" class="nav-text "><a href="#">Internships</a></li>
-						<li id = "resume-nav" class="nav-text "><a href="#">Resume</a></li>
-						<li id = "contact-nav" class="nav-text "><a href="#">Contact</a></li>
-						<li role="separator" class="divider"></li>
-						<li id = "blog-nav" class="nav-text "><a href="#">Blog</a></li>
-						<li id = "learning-nav" class="nav-text "><a href="#">Learning</a></li>
-						<li id = "running-nav" class="nav-text "><a href="#">Running</a></li>
-					</ul>
-				</div>
-			</div>
 		</nav>
 
-		<!-- <div class="hover-footer" style="">
-			Last updated: 22nd February 2016
-		</div> -->
-
-		<div id = "home" style = "position: relative;">
-			<div class = "half-pane" id="home-right-pane" style = "">
-				<div id="display-image" style = "">
+		<div id = "home" style = " position: relative;">
+			<div class = "full-pane" style = "">
+				Hello there!<br/>
+				My name is Abhinav Garg, and I am an Aerospace Engineering major at Indian Institute of Technology Bombay.<br/>
+				I started this web-page during the summers at the end of sophomore year.
+				You can find on this page the courses that I have done so far, details about the various internships that I have been through,
+				and some chatter about the projects that I have done and would be doing. <br/>
+				<br/>
+				Academics, I feel, is probably my forte, but I am actively involved in a lot of activities outside of it. I really like picking up new languages (programming and spoken likewise), writing (occasionally), playing the guitar and singing, and as for sports, I like to run and swim (though I am not great at either - they're still fun). If you'd like to reach out, please check the <em>Contact</em> menu, and introduce yourself. Cheers!
+			</div>
+			<!-- <div class = "half-pane" style = "">
+				<div style = "position: absolute; left: 25vw; margin-left: -5em; top: 25vh; width: 10em; height: 10em; border: 0px solid black; background-image: url('resources/abhinav_garg.jpg'); background-position: top; background-size: cover; background-repeat: none; border-radius: 100%;">
 				</div>
-			</div>
-			<div class = "half-pane" id="home-left-pane" style = "">
-				<span id="test_1">Hello!</span><br/><br/>
-
-				<span id="test_2">
-				My name is Abhinav Garg, and I am currently a student at Indian Institute of Technology Bombay. I will be graduating in 2017 with a Bachelor's and a Master's degree in Aerospace Engineering.<br/><br/>
-
-				Although I have fairly diverse academic interests, I am at present focussing on multi-agent systems and their control. Broadly, my research interests lie in Dynamics and Control, but I keep trying as many different fields as I can because I am of the belief that all Science and Technology is cool, and there isn't enough that one can do. <br/><br/>
-
-				I started this web-page during the end of sophomore year, driven by my learnings during some cool internships in the past winters and summers. Since then, I have been sort of a hobbyist web developer, this webpage being the prime example. <br/><br/>
-
-				This webpage summarises my academic and non-academic pursuits. You can find details about the courses that I have taken, the projects I am working (and have worked) on, and the kind of professional experience that I've had. I also (plan to) blog, and hopefully will be able to stay active enough for there to be something useful.<br/><br/>
-				
-				Academics is probably my forte, but I am actively involved in a lot of activities outside of it. I am a language enthusiast (spoken and coded likewise), I play the guitar and sing, and as for sports, I am into running, swimming and squash. I have also held various office posts so far, which have helped me develop skills necessary to work in teams and lead.<br/><br/>
-
-				If you'd like to reach out, please check the <em>Contact</em> menu, and introduce yourself. Cheers!
-				</span>
-				<!-- <hr/> -->
-			</div>
+			</div> -->
 		</div>
 		<div id = "courses" style = " position: relative; display: none;">
 			<div class = "half-pane left-pane" style = "">
 				<ul style="list-style-type: none;">
 					<td><b>IIT Bombay</b><br/>
-					Majoring in <b>Aerospace Engineering</b>
+					Majoring in <b>Aerospace Engineering</b> (with Honors)<br/>
 					</td>
 					<li>
 						<ul style = "list-style-type: circle;">
-						<td><b>Semester 8</b></td><br/>
-						<td>Core Requirement</td>
-						<li>AE 417 (Aircraft Design Lab)</li>
-						<li>HS 200 (Environmental Studies)</li>
-						<li>ES 200 (Environmental Studies: Science and Engineering)</li>
-						<td>Department Elective</td>
-						<li>EE 622 (Optimal Control Systems)</li>
-						<li>AE 706 (Computational Fluid Dynamics)</li>
-						<td>Honors Elective</td>
-						<li>AE 494 (BTP-II)</li>
-						<li>ME 766 (High Performance Scientific Computing)</li>
-						<td>Additional Learning</td>
-						<li>CS 763 (Computer Vision)</li>
-						<li>CS 408 (Graph Theory)</li>
-						<hr/><td><b>Semester 7</b></td><br/>
+						<td><b>Semester 7</b></td><br/>
 						<td>Core Requirement</td>
 						<li>AE 332 (Aircraft Design)</li>
 						<td>Department Elective</td>
@@ -277,7 +201,7 @@
 				<li><b>General Electric</b> | GE Aviation - Thermal Systems Design Team</li>
 				<span style = "margin-left:2em;">May-July 2015</span>
 				<br/>
-				I was an intern with General Electric at their research center in Bangalore (JFWTC). My work was on a project for understanding jet impingement heat transfer with the help of computational methods, and assess the applicability of various methods and turbulence models. It was a substantial experience - I really enjoyed the intellectual environment, and learnt a lot about heat transfer and flow dynamics. 
+				I was an intern with General Electric at their research center in Bangalore (JFWTC). My work was on a project for understanding jet impingement heat transfer with the help of computational methods, and assess the applicability of various methods and turbulence models. It was a substantial experience - I really enjoyed the intellectual environment, and learnt a lot about heat transfer and flow dynamics.
 				<hr/>
 				<li><b>Quetzal</b></li>
 				<span style = "margin-left:2em;">December 2014</span>
@@ -287,13 +211,9 @@
 				<li><b>Function Space</b></li>
 				<span style = "margin-left:2em;">May-July 2014</span>
 				<br/>
-				As a developer, I worked on back-end by creating a computational toolkit for the platform, and on front-end by creating a website for a company campaign. My most important takeaways were improved skills in using Python (particularly how to deploy it in web applications), designing webpages (HTML, CSS, Javascript and its libraries), and sort of reconnecting with my Physics loving self - since Function Space was designed for discussions on Science.
 				<hr/>
 				<li><b>Shopsense</b></li>
 				<span style = "margin-left:2em;">December 2013</span>
-				<br/>
-				As a developer, I worked on creating demo applications for the company. As this was my first intern, I took away a lot in terms of working in teams, and relished the culture at the startup. On the technical side of things, I picked skills in Photoshop, learnt a bit about design, substantially improved my coding skills in Python, and got used to regular working hours in companies - something which I later attempted to implement in my academic life too (which was pretty erratic earlier).
-				<br/><br/>
 				</ul>
 			</div>
 		</div>
@@ -344,44 +264,15 @@
 
 		<div id = "blog" style = " position: relative; display: none;">
 			<div class = "full-pane" style = "">
-				<hr/> 
-				22 February 2016<br/>
-				New semester's going pretty great so far! Today, I pushed some content changes to the page, and am considering overhauling the design soon. The coursework is pretty hectic, no doubt, but all the courses that I've taken are of immense relevance to my interests. I've also been running, and can say that it is one of the most significant changes that the new year has brought. There's a new tab on the page now, <i>Running</i> - where you can check how I've been doing.
-				<hr/> 
-				30 November 2015<br/>
-				I am starting with my winter work at the <a href="http://www.bio.iitb.ac.in/~patankar/">Molecular Parisitology Lab</a> at IIT Bombay. It is a Science excursion that I am taking, putting to use whatever I learnt in the course BB 405 (Molecular Biology). It will also be my first significant exposure to wet biology. I'll be doing this along with continuing work on my BTP - entailing a busy, but fulfulling Winters.
-				<hr/>
-				26 November 2015<br/>
-				A substantial semester has pulled to an end - more so because of how project centric it was as compared to course centric. The presentations for my B.Tech. Project and Supervised Learning Project went well, and I had interesting discussions with my guides and examiners. I hope to emulate and improve on this in the upcoming semesters, where work regarding my BTP intensifies. Lots to look forward to.
 				<hr/>
 				17 September 2015<br/>
 				I have decided to convert to the Dual Degree Programme. This changes my graduation year from 2016 to 2017, when I will be graduating with both a Bachelor's and a Master's degree from IIT Bombay. The main objective behind this move was to undertake more research experience as I am really enjoying the projects that I've taken this semester. Hope it all turns out great.
-				<hr/>
 			</div>
 		</div>
 
 		<!-- <div class = "footer">
 		Blah
 		</div> -->
-
-		<div id = "learning" style = " position: relative; display: none;">
-			<div class = "full-pane" style = "">
-				Create the need before presenting the solution. Although I faced that problem acutely back at school (I discovered an excellent textbook to fix that later) - this problem sort of persisted through college too. It wasn't as bad, I'll admit, but in this section, I thought I'd piece together all that I have learnt -- a bit about flight, and space, and algorithms, and robotics, and biology -- and motivate problems based on the needs to learn those concepts. It may be that I wasn't paying attention, but everything is much clearer now than it was before. In the process, I hope to also enhance my understanding and draw connections that I had earlier missed.
-				<hr/>
-				<a href="#" id="flight-basics">Flight Basics</a><br/>
-				<a href="#" id="plasma">Plasmas</a><br/>
-				<a href="#" id="ip-cv">Image Processing/Computer Vision</a><br/>
-				<a href="#" id="mol-bio">Molecular Biology</a><br/>
-			</div>
-		</div>
-
-		<div id = "running" style = " position: relative; display: none;">
-			<div class = "full-pane" style = "">
-				Starting January 2016, I took up a new year resolution that finally sustained! I've been running consistently (more or less) since then, and at present go for more than 6 km daily. It's challenging, empowering and exhilirating. On my blog in Wordpress, I've made a post regarding what finally worked. If you'd like, <a href="https://gargabhinav.wordpress.com/2016/02/12/running/">do give it a read</a>. <br/>
-
-				<div id="running-chart" style="margin: 2em;"></div>
-			</div>
-		</div>
 	</body>
 
 </html>

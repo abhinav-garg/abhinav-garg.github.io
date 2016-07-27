@@ -77,7 +77,7 @@ $(document).ready(function() {
 		        },
 		        tooltip: {
 		            headerFormat: '{point.y} - ', 
-		            pointFormat: '{series.name}'
+		            pointFormat: 'Semester {point.category} - {series.name}'
 		        },
 		        // Set the duration of animation
 		        plotOptions: {
@@ -147,6 +147,16 @@ $(document).ready(function() {
 		lastButton = $("#blog-nav");
 
 	});
+	$("#learning-nav").click(function(){
+		$("#landing").hide(); // If a button is clicked, the landing text will go away
+		last.hide(); lastButton.removeClass("active");
+		lastButton.css("background-color", "");
+		$("#learning-nav").toggleClass("active");
+		$("#learning").fadeIn("slow");
+		last = $("#learning");
+		lastButton = $("#learning-nav");
+
+	});
 	$("#running-nav").click(function(){
 		$("#landing").hide(); // If a button is clicked, the landing text will go away
 		last.hide(); lastButton.removeClass("active");
@@ -179,7 +189,7 @@ $(document).ready(function() {
 		        },
 		        yAxis: {
 		        	min: 0,
-		        	max: 10,
+		        	max: 15,
 		            title: {
 		                text: 'Distance (km)'
 		            },
@@ -189,7 +199,7 @@ $(document).ready(function() {
 		        },
 		        tooltip: {
 		            headerFormat: '{point.y} km - ', 
-		            pointFormat: '{point.x} {series.name}'
+		            pointFormat: '{point.category} {series.name}'
 		        },
 		        // Set the duration of animation
 		        plotOptions: {
@@ -204,7 +214,10 @@ $(document).ready(function() {
 		            data: [1.68, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1.68, 0, 2.41, 1.43, 0, 0, 0, 2.36, 0, 3.2, 1.53, 2.06, 1.76, 3.51, 5.12, 4.02, 4.03, 3.63, 3.1, 0, 2.02]
 		        }, {
 		            name: 'February',
-		            data: [0, 0, 3.36, 3.05, 0, 2.03, 0, 0, 0, 5, 5.3, 5.07, 5, 5.23, 5.02, 5.21, 5.03, 5.02, 5.02, 6.75, 6.21]
+		            data: [0, 0, 3.36, 3.05, 0, 2.03, 0, 0, 0, 5, 5.3, 5.07, 5, 5.23, 5.02, 5.21, 5.03, 5.02, 5.02, 6.75, 6.21, 6.29, 6.27, 6.25, 0, 0, 6.31, 6.54, 6.9]
+		        }, {
+		            name: 'March',
+		            data: [6.62, 0, 0, 3.1, 0, 11.6, 0, 0]
 		        }]
 		    });
 		});
