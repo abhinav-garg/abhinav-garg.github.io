@@ -62,7 +62,7 @@ body::after {
 	content: "";
 	background-image: url('../resources/background.jpg');
 	background-size: cover;
-	opacity: 0.5;
+	opacity: 0.6;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -89,12 +89,12 @@ body::after {
 nav {
 	color: white;
 	z-index: 100;
-	width: 90vw;
+	width: 100vw;
 	/*border-radius: 10vh;*/
 	position: fixed;
-	top: 2vh;
-	left: 50vw;
-	margin-left: -45vw;
+	/*top: 0vh;*/
+	/*left: 0vw;*/
+	/*margin-left: -45vw;*/
 	/*border: 200px dashed yellow;*/
 	/*border-bottom: 2px solid white;*/
 	/*font-size: 3vh;*/
@@ -133,7 +133,7 @@ nav {
 	width: 12vw;
 	height: 12vw;
 	border: 0px solid black;
-	background-image: url('../resources/abhinav_garg.jpg');
+	background-image: url('../resources/abhinav_garg1.jpg');
 	background-position: top;
 	background-size: cover;
 	background-repeat: none;
