@@ -60,8 +60,8 @@ body {
 /*Pseduo element*/
 body::after {
 	content: "";
-	background-image: url('../resources/background.jpg');
-	background-size: cover;
+	/*background-image: url('../resources/background.jpg');*/
+	/*background-size: cover;*/
 	opacity: 0.6;
 	top: 0;
 	left: 0;
