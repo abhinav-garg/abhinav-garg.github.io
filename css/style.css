@@ -106,8 +106,9 @@ nav {
 	width: 12vw;
 	height: 12vw;
 	border: 0px solid black;
-	background-image: url('../resources/abhinav_garg.jpg');
-	background-position: top;
+	background-image: url('../resources/abhinav_garg1.jpg');
+	/*background-position: top;*/
+	background-position: 80%0%;
 	background-size: cover;
 	background-repeat: none;
 	border-radius: 100%;
@@ -234,8 +235,9 @@ nav {
 		/* top right bottom left */
 		margin: 0.3em 0.3em 0.3em 0.3em;
 		border: 0px solid black;
-		background-image: url('../resources/abhinav_garg.jpg');
-		background-position: top;
+		background-image: url('../resources/abhinav_garg1.jpg');
+		/*background-position: top;*/
+		background-position: 80%0%;
 		background-size: cover;
 		background-repeat: none;
 		border-radius: 100%;
